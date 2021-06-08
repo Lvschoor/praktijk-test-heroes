@@ -6,7 +6,7 @@ package be.intecbrussel.entiteit;
  * Deze klasse krijgen jullie cadeau
  */
 public abstract class Hero {
-
+    //package variables used by the instances of the subclasses of Hero
     int age;
     String alias;
 
