@@ -49,6 +49,8 @@ public class HeroApp {
         heroes.addSuperHero(hulk);
         heroes.addSuperHero(ironFist);
         heroes.addSuperHero(misterFantastic);
+        heroes.addSuperHero(havok);
+
 
         /*
         Onderstaande methode kan je gebruiken om onze array af te printen.

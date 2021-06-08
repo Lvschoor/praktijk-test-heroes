@@ -4,7 +4,7 @@ import be.intecbrussel.entiteit.Hero;
 
 /**
  * Created by Mrrobot on 31/10/2017 heroes.
- *
+ * <p>
  * Deze klasse krijgen jullie cadeau
  */
 public class AllTheHeroes {
@@ -16,22 +16,24 @@ public class AllTheHeroes {
     }
 
     public void addSuperHero(Hero hero) {
+        boolean full = true;
         if (!isHeroTypePresent(hero)) {
             for (int i = 0; i < listOfHeroes.length; i++) {
                 if (listOfHeroes[i] == null) {
                     listOfHeroes[i] = hero;
-                    return;
-                } else if (listOfHeroes[i] != null && i+1 == listOfHeroes.length){
-                    System.out.println("Sorry no more place in this squad.");
+                    full=false;
+                    break;
                 }
             }
+        }if (full) {
+            System.out.println("Sorry no more place in this squad.");
         }
     }
 
     public void removeSuperHero(Hero hero) {
-        if (isHeroTypePresent(hero)){
-            for (int i = 0; i < listOfHeroes.length; i++){
-                if (hero.equals(listOfHeroes[i])){
+        if (isHeroTypePresent(hero)) {
+            for (int i = 0; i < listOfHeroes.length; i++) {
+                if (hero.equals(listOfHeroes[i])) {
                     listOfHeroes[i] = null;
                     return;
                 }
@@ -39,10 +41,10 @@ public class AllTheHeroes {
         }
     }
 
-    private boolean isHeroTypePresent (Hero hero) {
-        for (Hero h: listOfHeroes) {
+    private boolean isHeroTypePresent(Hero hero) {
+        for (Hero h : listOfHeroes) {
             if (h != null) {
-                if (h.getClass() == hero.getClass()){
+                if (h.getClass() == hero.getClass()) {
                     return true;
                 }
             }
@@ -51,7 +53,7 @@ public class AllTheHeroes {
     }
 
 
-    public Hero[] getHeroes () {
+    public Hero[] getHeroes() {
         return listOfHeroes;
     }
 }
