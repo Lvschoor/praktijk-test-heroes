@@ -21,7 +21,7 @@ public class AllTheHeroes {
                 if (listOfHeroes[i] == null) {
                     listOfHeroes[i] = hero;
                     return;
-                } else if (listOfHeroes[i] != null && i == listOfHeroes.length){
+                } else if (listOfHeroes[i] != null && i+1 == listOfHeroes.length){
                     System.out.println("Sorry no more place in this squad.");
                 }
             }
