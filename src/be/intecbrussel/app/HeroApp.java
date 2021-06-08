@@ -49,6 +49,7 @@ public class HeroApp {
         heroes.addSuperHero(hulk);
         heroes.addSuperHero(ironFist);
         heroes.addSuperHero(misterFantastic);
+        //voor deze zou geen plaats meer mogen zijn
         heroes.addSuperHero(havok);
 
 
