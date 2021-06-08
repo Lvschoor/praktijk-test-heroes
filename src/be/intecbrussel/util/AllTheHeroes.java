@@ -20,6 +20,7 @@ public class AllTheHeroes {
             for (int i = 0; i < listOfHeroes.length; i++) {
                 if (listOfHeroes[i] == null) {
                     listOfHeroes[i] = hero;
+                    //System.out.println(hero);
                     return;
                 } else if (listOfHeroes[i] != null && i+1 == listOfHeroes.length){
                     System.out.println("Sorry no more place in this squad.");
