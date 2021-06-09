@@ -23,6 +23,6 @@ public class Shapeshifter extends Hero{
 
     @Override
     public void useSuperPower() {
-        System.out.println(this.alias + " is now using SUPERPOWER!!");
+        System.out.println("Disguises as enemy, attacks enemy from behind");
     }
 }

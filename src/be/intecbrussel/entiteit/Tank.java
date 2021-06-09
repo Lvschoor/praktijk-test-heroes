@@ -21,7 +21,7 @@ public class Tank extends Hero{
 
     @Override
     public void useSuperPower() {
-        System.out.println(this.alias + " is now using SUPERPOWER!!");
+        System.out.println("Haha no damage done, stupid enemy");
 
     }
 }

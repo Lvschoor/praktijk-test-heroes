@@ -23,7 +23,7 @@ public Energizer(String alias){
 
     @Override
     public void useSuperPower() {
-        System.out.println(this.alias + " is now using SUPERPOWER!!");
+        System.out.println("Charging..., attacks enemy with charged superpowers");
 
     }
 }

@@ -23,7 +23,7 @@ public class ArmoredHero extends Hero{
 
     @Override
     public void useSuperPower() {
-        System.out.println(this.alias + " is now using SUPERPOWER!!");
+        System.out.println("Uses suit to shoot enemy");
 
     }
 }

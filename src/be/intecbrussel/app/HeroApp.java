@@ -87,25 +87,13 @@ public class HeroApp {
          */
         for (int i = 0; i < listOfHeroes.length; i++) {
             if (listOfHeroes[i] != null) {
-                if (listOfHeroes[i] instanceof ArmoredHero){
-                    System.out.println(listOfHeroes[i]);
-                    System.out.println("Uses suit to shoot enemy");
-                    fancyLines(55);
-                } else if (listOfHeroes[i] instanceof Tank){
-                    System.out.println(listOfHeroes[i]);
-                    System.out.println("Haha no damage done, stupid enemy");
-                    fancyLines(55);
-                } else if (listOfHeroes[i] instanceof Energizer){
-                    System.out.println(listOfHeroes[i]);
-                    System.out.println("Charging..., attacks enemy with charged superpowers");
-                    fancyLines(55);
-                } else if (listOfHeroes[i] instanceof Shapeshifter){
-                    System.out.println(listOfHeroes[i]);
-                    System.out.println("Disguises as enemy, attacks enemy from behind");
-                    fancyLines(55);
-                }
+                System.out.println(listOfHeroes[i]);
+                listOfHeroes[i].useSuperPower();
+                fancyLines(55);
             }
-        }
+
+
+            }
     }
 
     private static void printHeader() {
