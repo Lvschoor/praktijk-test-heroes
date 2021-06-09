@@ -10,9 +10,6 @@ import be.intecbrussel.util.AllTheHeroes;
  */
 public class HeroApp {
 
-    // constructor in line with the UML
-    public HeroApp() {
-    }
 
     public static void main(String[] args) {
 
@@ -49,7 +46,7 @@ public class HeroApp {
         heroes.addSuperHero(hulk);
         heroes.addSuperHero(ironFist);
         heroes.addSuperHero(misterFantastic);
-        //voor deze zou geen plaats meer mogen zijn
+        //voor deze is er geen plaats meer in het team
         heroes.addSuperHero(havok);
 
 

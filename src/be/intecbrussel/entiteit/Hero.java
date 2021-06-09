@@ -10,6 +10,7 @@ public abstract class Hero {
     int age;
     String alias;
 
+
     /*
     Vergeet niet dat deze methode nog een implementatie
     nodig heeft in de subklassen.
